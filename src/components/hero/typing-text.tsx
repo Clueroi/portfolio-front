@@ -13,8 +13,8 @@ type TypingStatus = "typing" | "waiting" | "deleting";
 
 export function TypingText({
     words,
-    typingSpeed = 90,
-    deletingSpeed = 56,
+    typingSpeed = 120,
+    deletingSpeed = 60,
     pauseTime = 1500,
 }: TypingTextProps) {
     const [status, setStatus] = useState<TypingStatus>("typing");
